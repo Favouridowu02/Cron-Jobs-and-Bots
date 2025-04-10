@@ -1,4 +1,2 @@
 python-dotenv
 google-genai
-smtplib
-email
