@@ -1,8 +1,0 @@
-services:
-  - type: cron
-    name: weekly-curiosity-drop
-    env: python
-    plan: free
-    schedule: "0 9 * * 1"  # Every Monday at 9 AM
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python main.py"
