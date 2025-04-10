@@ -4,5 +4,5 @@ services:
     env: python
     plan: free
     schedule: "0 9 * * 1"  # Every Monday at 9 AM
-    buildCommand: "pip install -r Monday-Curiosity-Script/requirements.txt"
-    startCommand: "python Monday-Curiosity-Script/main.py"
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
