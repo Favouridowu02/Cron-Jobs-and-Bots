@@ -29,3 +29,8 @@ jobs:
           APP_PWD: ${{ secrets.APP_PWD }}
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
+          
+      - name: Debug Environment Variables
+        run: |
+          echo "API_KEY is set to: ${{ secrets.API_KEY }}"
+          echo "SENDER_EMAIL is set to: ${{ secrets.SENDER_EMAIL }}"
