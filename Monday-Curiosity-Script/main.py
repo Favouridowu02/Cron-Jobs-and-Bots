@@ -82,7 +82,7 @@ class Mailer:
     def __init__(self, prompt):
         self.__client = genai.Client(api_key=getenv("API_KEY"))
         self.__prompt = prompt
-        self.__sender_email = "lioncrypto37@gmail.com"
+        self.__sender_email = getenv("SENDER_EMAIL")
         self.__app_password = getenv("APP_PWD")
     
     def generate_content(self):
@@ -120,4 +120,4 @@ class Mailer:
 
 if __name__ == "__main__":
     weekly = Mailer(PROMPT)
-    weekly.send_email("favouridowu02@gmail.com")
+    weekly.send_email(getenv("RECEIVER_EMAIL"))
